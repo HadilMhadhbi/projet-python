@@ -102,7 +102,7 @@ L’objectif est de mettre en œuvre un pipeline complet de Machine Learning, in
 
 ```bash
 # Cloner le repository
-git clone https://github.com/yourusername/drug-consumption-project.git
+git clone https://github.com/HadilMhdhbi/projet-python.git
 cd drug-consumption-project
 
 # Créer un environnement virtuel
