@@ -13,8 +13,16 @@ import seaborn as sns
 
 def load_data():
     """Charger les données"""
-    df = pd.read_csv('drug_consumption.csv')
+    column_names = [
+        'ID', 'Age', 'Gender', 'Education', 'Country', 'Ethnicity',
+        'Nscore', 'Escore', 'Oscore', 'Ascore', 'Cscore', 'Impulsive', 'SS',
+        'Alcohol', 'Amphet', 'Amyl', 'Benzos', 'Caff', 'Cannabis', 'Choc',
+        'Coke', 'Crack', 'Ecstasy', 'Heroin', 'Ketamine', 'Legalh',
+        'LSD', 'Meth', 'Mushrooms', 'Nicotine', 'Semer', 'VSA'
+    ]
+    df = pd.read_csv('drug_consumption.csv', names=column_names)
     print(f"Dataset chargé: {df.shape}")
+    print(f"Colonnes: {df.columns.tolist()[:10]}...")
     return df
 
 def encode_target(df):
